@@ -414,7 +414,7 @@ life babyyyyy!
 OK so in the last line we call `(add-entry (first \*command-line-args*))`.
 `\*command-line-args*` is a sequence containing, well, all the command line
 arguments that were passed to the script. If you were to create the file
-`args.clj` with the contents `\*command-line-args*`, then ran `bb args.clj 1 2
+`args.clj` with the contents `(prn \*command-line-args*)`, then ran `bb args.clj 1 2
 3`, it would print `("1" "2" "3")`.
 
 Our `journal` file is at the point where we can add an entry by calling
